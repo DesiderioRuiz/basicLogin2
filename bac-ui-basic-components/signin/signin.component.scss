@@ -1,0 +1,49 @@
+/* ==========================================================================
+Main page styles
+========================================================================== */
+
+.hipster {
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+  background: url('../../../content/images/jhipster_family_member_0.svg') no-repeat center;
+  background-size: contain;
+}
+
+.btn-danger.shadow {
+  background: #d31245;
+}
+
+#label {
+  width: 326px;
+  height: 26px;
+  color: #848484;
+  font-family: 'Source Sans Pro';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+/* wait autoprefixer update to allow simple generation of high pixel density media query */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (-moz-min-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .hipster {
+    background: url('../../../content/images/jhipster_family_member_0.svg') no-repeat center;
+    background-size: contain;
+    box-shadow: 10px 10px 5px grey;
+  }
+}
+
+.fade-scale {
+  transform: scale(1.2);
+  -webkit-transition: all 0.45s linear;
+  -o-transition: all 0.45s linear;
+  transition: all 0.45s linear;
+}
+
+.shadow {
+  box-shadow: 10px 10px 5px grey;
+}
